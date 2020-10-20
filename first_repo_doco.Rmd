@@ -1,0 +1,21 @@
+---
+title: "Github tutorial"
+author: "Jackson Stockbridge"
+date: "20/10/2020"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+My *first* version controlled project in RStudio
+
+Lets create a test plot
+
+```{r, test-plot, echo=FALSE}
+plot(cars)
+```
+
