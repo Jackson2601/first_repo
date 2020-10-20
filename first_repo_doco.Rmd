@@ -3,19 +3,30 @@ title: "Github tutorial"
 author: "Jackson Stockbridge"
 date: "20/10/2020"
 output:
-  word_document: default
+  pdf_document: default
   html_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-My *first* version controlled project in RStudio
+This report documents me learning how to use Github. So far, i have staged and committed changes and pulled changed files from my online Git, and pushed changes from my local repo to the online Git. 
 
-Lets create a test plot
+Lets create a test plot of distance (miles) and speed (mph)
 
 ```{r, test-plot, echo=FALSE}
-plot(cars)
+plot(cars, col = "red", xlab = "Speed (mph)", ylab = "Distance (miles)")
 ```
+
+A summary of the data frame is given below
+
+```{r, cars-summary, echo=FALSE}
+library(knitr)
+kable(summary(cars))
+```
+
+
+
 
